@@ -1,13 +1,49 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    anemone (0.7.2)
+      nokogiri (>= 1.3.0)
+      robotex (>= 1.0.0)
+    archive-zip (0.12.0)
+      io-like (~> 0.3.0)
+    childprocess (3.0.0)
+    chromedriver-helper (1.2.0)
+      archive-zip (~> 0.10)
+      nokogiri (~> 1.8)
+    image_size (2.0.2)
+    io-like (0.3.0)
+    log4r (1.1.10)
+    mini_magick (4.9.5)
+    mini_portile2 (2.4.0)
+    nokogiri (1.10.7)
+      mini_portile2 (~> 2.4.0)
+    parallel (1.19.1)
     rack (2.1.2)
+    rake (13.0.1)
+    robotex (1.0.0)
+    rubyzip (2.2.0)
+    selenium-webdriver (3.142.7)
+      childprocess (>= 0.5, < 4.0)
+      rubyzip (>= 1.2.2)
+    thor (1.0.1)
+    wraith (4.2.4)
+      anemone
+      chromedriver-helper (~> 1.1)
+      image_size
+      log4r
+      mini_magick (~> 4.8)
+      parallel
+      rake
+      robotex
+      selenium-webdriver (~> 3.5)
+      thor
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rack
+  wraith
 
 BUNDLED WITH
    2.1.2
