@@ -1,49 +1,31 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    anemone (0.7.2)
-      nokogiri (>= 1.3.0)
-      robotex (>= 1.0.0)
-    archive-zip (0.12.0)
-      io-like (~> 0.3.0)
-    childprocess (3.0.0)
-    chromedriver-helper (1.2.0)
-      archive-zip (~> 0.10)
-      nokogiri (~> 1.8)
-    image_size (2.0.2)
-    io-like (0.3.1)
-    log4r (1.1.10)
-    mini_magick (4.10.1)
-    mini_portile2 (2.4.0)
-    nokogiri (1.10.9)
-      mini_portile2 (~> 2.4.0)
-    parallel (1.19.1)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
+    chrome_diff (0.1.0)
+      ferrum (< 1.0)
+    cliver (0.3.2)
+    concurrent-ruby (1.1.7)
+    ferrum (0.9)
+      addressable (~> 2.5)
+      cliver (~> 0.3)
+      concurrent-ruby (~> 1.1)
+      websocket-driver (>= 0.6, < 0.8)
+    public_suffix (4.0.6)
     rack (2.2.3)
     rake (13.0.1)
-    robotex (1.0.0)
-    rubyzip (2.3.0)
-    selenium-webdriver (3.142.7)
-      childprocess (>= 0.5, < 4.0)
-      rubyzip (>= 1.2.2)
-    thor (1.0.1)
-    wraith (4.2.4)
-      anemone
-      chromedriver-helper (~> 1.1)
-      image_size
-      log4r
-      mini_magick (~> 4.8)
-      parallel
-      rake
-      robotex
-      selenium-webdriver (~> 3.5)
-      thor
+    websocket-driver (0.7.3)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  chrome_diff
   rack
-  wraith
+  rake
 
 BUNDLED WITH
-   2.1.2
+   2.1.4
