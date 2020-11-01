@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    chrome_diff (0.1.0)
+    chrome_diff (0.1.1)
       ferrum (< 1.0)
     cliver (0.3.2)
     concurrent-ruby (1.1.7)

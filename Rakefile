@@ -14,7 +14,7 @@ SITE_CHECK_CONF = {
     foobar: "/foobar",
   },
   options: {
-    fuzz: 5,
+    threshold: 5,
   }
 }
 
